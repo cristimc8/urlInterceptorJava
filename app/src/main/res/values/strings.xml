@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Soundrift</string>
+    <string name="accessibility_service_description">Description</string>
+    <string name="urlInterceptorUri">com.project.soundrift.UrlInterceptorService</string>
+</resources>
