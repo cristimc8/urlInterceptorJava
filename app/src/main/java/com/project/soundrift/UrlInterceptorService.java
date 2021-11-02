@@ -100,7 +100,7 @@ public class UrlInterceptorService extends AccessibilityService {
     private void performRedirect(@NonNull String redirectUrl, @NonNull String browserPackage) {
         try {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(redirectUrl));
-            intent.setPackage(browserPackage);
+            intent.setPackage("com.android.chrome");
             intent.putExtra(Browser.EXTRA_APPLICATION_ID, browserPackage);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
